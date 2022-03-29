@@ -1,0 +1,17 @@
+{
+    "store.custom#lives":{
+        "blocks":[
+            "rich-text#livetittle",
+            "livestreaming"
+        ],
+        "props":{
+            "blockClass": "livestreaming"
+        }
+    },
+    "rich-text#livetittle":{
+        "props": {
+            "text": "Bienvenido al liveshopping TEST",
+            "blockClass": "shelfTitle"
+          }        
+    }
+}
