@@ -1,7 +1,11 @@
 {
   "store.home": {
+    "children": [
+      "modal-trigger#example"
+    ],
     "blocks": [
       "rich-text#live-title",
+      "modal-trigger#first",
       "livestreaming",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
@@ -15,6 +19,48 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+  "modal-trigger#first":{
+    "children": [
+      "rich-text#trigger",
+      "modal-layout#first"
+    ]
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
+  "modal-trigger#example": {
+    "children": [
+      "rich-text#example",
+      "modal-layout#example"
+    ]
+  },
+  "modal-layout#first": {
+      "children": [
+        "rich-text#hello"
+      ]
+    },
+    "rich-text#hello": {
+      "props": {
+        "text": "Hello"
+      }
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Click me"
+    }
+  },
+  "modal-layout#example": {
+    "children": [
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Hello"
+    }
   },
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -46,7 +92,7 @@
   },
   "rich-text#live-title":{
     "props": {
-      "text": "Bienvenido al liveshopping",
+      "text": "## Bienvenido al liveshopping",
       "blockClass": "shelfTitle"
     }
   },
